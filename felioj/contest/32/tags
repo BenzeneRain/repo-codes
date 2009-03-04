@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+LEN	d-s.c	4;"	d	file:
+cur	d-s.c	/^node cur,ext;$/;"	v
+dequeue	d-s.c	/^int dequeue()$/;"	f
+direction	d-s.c	/^  char direction[2];$/;"	m	struct:__anon1	file:
+dis	d-s.c	/^int dis[25][25][4];$/;"	v
+distance	d-s.c	/^  char distance;$/;"	m	struct:__anon1	file:
+empty	d-s.c	/^bool empty()$/;"	f
+end	d-s.c	/^int now[2],end[2];$/;"	v
+enqueue	d-s.c	/^int enqueue(node N)$/;"	f
+ext	d-s.c	/^node cur,ext;$/;"	v
+head	d-s.c	/^int head,tail;$/;"	v
+legal	d-s.c	/^bool legal(node ext, int dir)$/;"	f
+main	d-s.c	/^int main()$/;"	f
+maze	d-s.c	/^char maze[25][25];$/;"	v
+move	d-s.c	/^int move(int dir)$/;"	f
+node	d-s.c	/^} node;$/;"	t	typeref:struct:__anon1	file:
+now	d-s.c	/^int now[2],end[2];$/;"	v
+queue	d-s.c	/^node queue[LEN];$/;"	v
+tail	d-s.c	/^int head,tail;$/;"	v
+visited	d-s.c	/^bool visited[25][25][4];$/;"	v
+x	d-s.c	/^  char x,y;$/;"	m	struct:__anon1	file:
+y	d-s.c	/^  char x,y;$/;"	m	struct:__anon1	file:
