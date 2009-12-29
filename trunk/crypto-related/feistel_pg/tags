@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AINC	include/feistel_pg_lib.h	6;"	d
+BINC	include/feistel_pg_lib.h	7;"	d
+CFLAGS	Makefile	/^CFLAGS   = -ggdb3$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = -I.\/include $/;"	m
+ExpandKey_16	tinyprp.c	/^inline void ExpandKey_16(uint16_t key[KEYSIZE_16], uint16_t *expandedKey)$/;"	f
+ExpandKey_32	tinyprp.c	/^inline void ExpandKey_32(uint32_t key[KEYSIZE_32], uint32_t *expandedKey)$/;"	f
+GETBIT	tinyprp.c	7;"	d	file:
+InvMixCells	tinyprp.c	/^static inline void InvMixCells(uint8_t c[4])$/;"	f	file:
+InvMixCells_i_16	tinyprp.c	/^static inline void InvMixCells_i_16(uint8_t a[2])$/;"	f	file:
+InvMixCells_i_32	tinyprp.c	/^static inline void InvMixCells_i_32(uint8_t a[4])$/;"	f	file:
+InvShiftCells_i_16	tinyprp.c	/^static inline void InvShiftCells_i_16(uint8_t r[2])$/;"	f	file:
+InvShiftCells_i_32	tinyprp.c	/^static inline void InvShiftCells_i_32(uint8_t r[4])$/;"	f	file:
+InvSubBytes_i_16	tinyprp.c	/^static inline void InvSubBytes_i_16(uint8_t val[2])$/;"	f	file:
+InvSubBytes_i_32	tinyprp.c	/^static inline void InvSubBytes_i_32(uint8_t val[4])$/;"	f	file:
+Invc_i_16	tinyprp.c	/^static const uint8_t Invc_i_16[] = {0x1, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0x0};$/;"	v	file:
+Invc_i_32	tinyprp.c	/^static const uint8_t Invc_i_32[] = {0x1, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0x0};$/;"	v	file:
+KEYSIZE_16	include/tinyprp.h	4;"	d
+KEYSIZE_32	include/tinyprp.h	6;"	d
+LDFLAGS	Makefile	/^LDFLAGS  = -lm$/;"	m
+MixCells	tinyprp.c	/^static inline void MixCells(uint8_t c[4])$/;"	f	file:
+MixCells_i_16	tinyprp.c	/^static inline void MixCells_i_16(uint8_t a[2])$/;"	f	file:
+MixCells_i_32	tinyprp.c	/^static inline void MixCells_i_32(uint8_t a[4])$/;"	f	file:
+OBJS	Makefile	/^OBJS = tinyprp.o feistel_pg_lib.o test.o$/;"	m
+RCON_COUNT_16	include/tinyprp.h	5;"	d
+RCON_COUNT_32	include/tinyprp.h	7;"	d
+SETBIT	tinyprp.c	8;"	d	file:
+ShiftCells_i_16	tinyprp.c	/^static inline void ShiftCells_i_16(uint8_t r[2])$/;"	f	file:
+ShiftCells_i_32	tinyprp.c	/^static inline void ShiftCells_i_32(uint8_t r[4])$/;"	f	file:
+SubBytes_i_16	tinyprp.c	/^static inline void SubBytes_i_16(uint8_t val[2])$/;"	f	file:
+SubBytes_i_32	tinyprp.c	/^static inline void SubBytes_i_32(uint8_t val[4])$/;"	f	file:
+TIMESCALE	test.c	8;"	d	file:
+_H_FEISTEL_PG_LIB_	include/feistel_pg_lib.h	4;"	d
+_H_TINYPRP_	include/tinyprp.h	2;"	d
+bit7_shift	tinyprp.c	/^static const uint8_t bit7_shift = 7;$/;"	v	file:
+c_i_16	tinyprp.c	/^static const uint8_t c_i_16[] = {0x1, 0x1, 0x0, 0x0, 0x0, 0x1, 0x1, 0x0};$/;"	v	file:
+c_i_32	tinyprp.c	/^static const uint8_t c_i_32[] = {0x1, 0x1, 0x0, 0x0, 0x0, 0x1, 0x1, 0x0};$/;"	v	file:
+calc_aux	tinyprp.c	/^static inline uint32_t calc_aux(uint32_t q, uint32_t a0, uint32_t a1)$/;"	f	file:
+cpu_freq	test.c	/^static double cpu_freq;$/;"	v	file:
+decrypt_16	tinyprp.c	/^void decrypt_16(uint16_t  *expandedKey, uint8_t a[4])$/;"	f
+decrypt_32	tinyprp.c	/^void decrypt_32(uint32_t  *expandedKey, uint8_t a[4])$/;"	f
+discomp_max	feistel_pg_lib.c	/^void discomp_max(uint32_t max, uint32_t *a, uint32_t *b)$/;"	f
+encrypt_16	tinyprp.c	/^void encrypt_16(uint16_t  *expandedKey, uint8_t a[2])$/;"	f
+encrypt_32	tinyprp.c	/^void encrypt_32(uint32_t  *expandedKey, uint8_t a[4])$/;"	f
+feistel_dec	feistel_pg_lib.c	/^static uint64_t feistel_dec(uint32_t a, uint32_t b, uint32_t m, uint32_t *key[], uint32_t round)$/;"	f	file:
+feistel_enc	feistel_pg_lib.c	/^static uint64_t feistel_enc(uint32_t a, uint32_t b, uint32_t m, uint32_t *key[], uint32_t round)$/;"	f	file:
+find_hbit	tinyprp.c	/^static inline int find_hbit(uint32_t val)$/;"	f	file:
+get_rdtsc	test.c	/^static unsigned long long get_rdtsc()$/;"	f	file:
+main	test.c	/^int main(int argc, char *argv[])$/;"	f
+mod	tinyprp.c	/^static const uint8_t mod = 0x1B;$/;"	v	file:
+p_div_rm	tinyprp.c	/^static inline void p_div_rm(uint32_t r0, uint32_t r1, uint32_t *q, uint32_t *r)$/;"	f	file:
+permute	feistel_pg_lib.c	/^uint32_t permute(uint32_t val, uint32_t max, uint32_t a, uint32_t b, uint32_t *key[], uint32_t round)$/;"	f
+rcon_i_16	tinyprp.c	/^static const uint16_t rcon_i_16[RCON_COUNT_16] = {0x0000, 0x0101, 0x0202, 0x0404, 0x0808, $/;"	v	file:
+rcon_i_32	tinyprp.c	/^static const uint32_t rcon_i_32[RCON_COUNT_32] = {0x01010000, 0x04040202, 0x10100808, $/;"	v	file:
+reverse	tinyprp.c	/^static inline uint8_t reverse(uint8_t x)$/;"	f	file:
+revpermute	feistel_pg_lib.c	/^uint32_t revpermute(uint32_t val, uint32_t max, uint32_t a, uint32_t b, uint32_t *key[], uint32_t round)$/;"	f
+timer_init	test.c	/^static int timer_init()$/;"	f	file:
+xtime	tinyprp.c	/^static inline uint8_t xtime(uint8_t x)$/;"	f	file:
