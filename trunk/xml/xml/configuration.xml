@@ -1,0 +1,91 @@
+<?xml version='1.0' ?>
+<Configuration>
+    <Max_data_number>
+        <Description>
+            Max number of items in the database
+            The default value is 1048573 = 2^20
+        </Description>
+        <Value>
+        	1048573
+        </Value>
+    </Max_data_number>
+
+    <Max_data_length>
+        <Description>
+            Max length of each data
+            Suppose all of the items are strings only
+            The default value is 64
+        </Description>
+        <Value>
+        	64
+        </Value>
+    </Max_data_length>
+
+    <Max_cache_size>
+        <Description>
+			Max number of items can be put into the cache
+			The default value is 64	
+		</Description>
+		<Value>
+			64
+		</Value>
+    </Max_cache_size>
+
+    <Max_Buffer_length>
+        <Description>
+            Max Buffer length
+            The buffer contains the original data or the encrypted data.
+            Since Base64 has beed adopted, the max buffer length should
+            be at least (MAX_DATA_LENGTH + 8) * 4 / 3
+            The default value is 100
+        </Description>
+        <Value>
+        	100
+        </Value>
+    </Max_Buffer_length>
+
+    <Max_B_array_size>
+		<Description>
+			Max size of array B
+			The value is approximately \sqrt{nk}, where n is the Max_data_number and k is Max_cache_size
+			The default value is 8196
+		</Description>
+		<Value>
+			8196
+		</Value>
+    </Max_B_array_size>
+    
+    <Max_L_structure_size>
+		<Description>
+			Max number of items can be put into structure L
+			The value should be at least equal to Max_B_array_size
+			The default value is 8196
+		</Description>
+		<Value>
+			8196
+		</Value>
+    </Max_L_structure_size>
+
+    <Max_W_structure_size>
+		<Description>
+			Max number of slices in W Structure
+			The value should be at least half of the Max_data_number
+			The default value is 524288
+		</Description>
+		<Value>
+			524288
+		</Value>
+    </Max_W_structure_size>
+
+    <Max_gamma_tree_size>
+		<Description>
+			Max number of nodes in gamma tree
+			The value should be at lease two times of Max_L_structure_size
+			The default value is 16384
+		</Description>
+		<Value>
+			16384
+		</Value>
+    </Max_gamma_tree_size>
+
+</Configuration>
