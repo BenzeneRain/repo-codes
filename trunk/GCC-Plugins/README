@@ -1,0 +1,27 @@
+Here are several examples of GCC plugins, and each directory contains one.
+
+1. test
+The codes here are actually refered and modified from http://www.kdedevelopers.org/node/3945. The function is given a pass name, gcc will dump the cooresponding infomation while compiling
+
+2. get_ast
+Extract AST in gcc front-end, which means it has not change to gimple yet.
+
+3. get_ast_from_gimple
+Somthing similar to the get_ast, but this time we extract from the gimple, and in the meanwhile we have basic blocks ready now.
+
+4. gimple_modify_code(Recommand to read)
+In gimple form and right after control flow pass, insert a prinf("Hello, GCC!\n") after the first GIMPLE_ASSIGN statement of each basic block. The code is recommanded to read because I add some comments to it.
+
+5. dump_bb
+Just forget this. It is incomplete and discarded.
+
+In each directory, you can use `make` to compile the plugin, and `make prog`to test it using the fibonaci program. You might need to modify some variables in the Makefile, such as location of GCC.
+
+Notice:
+These GCC plugins are written for gcc(version >= 4.5). I know there are patches not from gcc but equipt gcc with plugin as well, and I'm afraid the plugins here may not work on these patched system if gcc(version < 4.5)
+
+
+For more information:
+
+1. Read the GCC Interal Manual, and use it as reference.
+2. http://ehren.wordpress.com. Many examples can be found here.
